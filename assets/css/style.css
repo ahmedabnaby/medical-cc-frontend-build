@@ -148,7 +148,7 @@ a {
 }
 
 .bg-dark-card img {
-    width: 50%;
+    width: 250px;
     margin: 0px auto;
 }
 
@@ -1024,7 +1024,9 @@ input:-webkit-autofill:active {
 .footerCompanyCopyRights {
     font-size: 1.5rem !important;
 }
-
+.footerCompanyCopyRights span{
+    margin-left: 3px;
+}
 @keyframes scaleInOut {
     from {
         transform: scale(0);
@@ -1045,7 +1047,7 @@ input:-webkit-autofill:active {
     width: 60px;
     height: 60px;
     bottom: 40px;
-    right: 40px;
+    right: 20px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -1136,7 +1138,7 @@ input:-webkit-autofill:active {
     }
 
     .bg-dark-card img {
-        width: 65%;
+        width: 150px;
     }
 
     .title-ar img {

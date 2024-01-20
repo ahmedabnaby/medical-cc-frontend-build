@@ -368,6 +368,23 @@ select:focus {
     cursor: pointer;
 }
 
+.btnSecondary {
+    font-family: Helvetica-Neue-Font-Semi-bold !important;
+    font-weight: 800;
+    padding: 14px 62px;
+    margin: 25px auto !important;
+    background-color: #0f0f17 !important;
+    color: #dbff17 !important;
+    width: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnSecondary:hover {
+    background-color: #dbff17 !important;
+    color: #0f0f17 !important;
+}
+
 .btnLeft,
 .btnRight {
     margin: 25px 0px !important;
@@ -1024,9 +1041,11 @@ input:-webkit-autofill:active {
 .footerCompanyCopyRights {
     font-size: 1.5rem !important;
 }
-.footerCompanyCopyRights span{
+
+.footerCompanyCopyRights span {
     margin-left: 3px;
 }
+
 @keyframes scaleInOut {
     from {
         transform: scale(0);

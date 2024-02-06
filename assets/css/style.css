@@ -1008,6 +1008,7 @@ input:-webkit-autofill:active {
 
 .h-75 {
     height: 75vh !important;
+    overflow-y: scroll;
 }
 
 #ourDoctorsImg {
@@ -1080,6 +1081,19 @@ input:-webkit-autofill:active {
     margin-top: 16px;
 }
 
+#followUpBtn {
+    /* background-color: transparent !important;
+    color: #0f0f17 !important; */
+    margin: 0px auto !important;
+}
+
+#followUpBtnAr {
+    /* background-color: transparent !important;
+    color: #0f0f17 !important; */
+    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+    margin: 0px auto !important;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1148,8 +1162,10 @@ input:-webkit-autofill:active {
         width: 95%;
     }
 
-    .btnPrimary {
-        font-size: 10px;
+    .btnPrimary,
+    #followUpBtn,
+    #followUpBtnAr {
+        font-size: 12px;
     }
 
     .btnPrimaryAr {

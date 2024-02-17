@@ -605,8 +605,9 @@ button {
 }
 
 .ekseerFormInnerLabelAr>label {
-    left: 27rem !important;
+    left: 0rem !important;
     right: 0px !important;
+    width: 100%;
 }
 
 .ekseerFormInnerLabelAr-sm>label {
@@ -853,12 +854,10 @@ input:-webkit-autofill:active {
 
 .rating-emoji-wrapper:before {
     top: 0;
-    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 100%); */
 }
 
 .rating-emoji-wrapper:after {
     bottom: 0;
-    /* background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 100%); */
 }
 
 .rating-emoji {
@@ -1047,16 +1046,6 @@ input:-webkit-autofill:active {
     margin-left: 3px;
 }
 
-@keyframes scaleInOut {
-    from {
-        transform: scale(0);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
 .fade-in-out {
     opacity: 0;
     animation: fadeIn 2s infinite ease-in-out;
@@ -1094,6 +1083,103 @@ input:-webkit-autofill:active {
     margin: 0px auto !important;
 }
 
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.react-datepicker__input-container input::placeholder {
+    /* Set the desired color for the placeholder text */
+    position: relative;
+    top: -7px;
+    color: rgb(178, 173, 173) !important;
+    font-weight: 500;
+    /* Adjust the color as needed */
+}
+
+.react-datepicker__input-container {
+    margin-bottom: 15px;
+}
+
+.date-picker-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.react-datepicker-popper {
+    z-index: 9999 !important;
+}
+
+.datePicker-input {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.date-picker-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 20px;
+    /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+}
+#floatingPassword{
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+.password-input-container {
+    position: relative;
+}
+
+.password-toggle-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Adjust as needed */
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.password-toggle-btnAr {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    /* Adjust as needed */
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.date-picker-imageAr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 20px !important;
+    /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+
+
+@keyframes scaleInOut {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1118,6 +1204,12 @@ input:-webkit-autofill:active {
     100% {
         transform: translateY(0px);
         /* Return to starting position */
+    }
+}
+
+@media (min-width:769px) and (max-width:1399px) {
+    .pmobile {
+        padding-bottom: 22px;
     }
 }
 
@@ -1202,7 +1294,8 @@ input:-webkit-autofill:active {
     }
 
     .ekseerFormInnerLabelAr>label {
-        left: 16rem !important;
+        left: 0rem !important;
+        width: 100% !important;
     }
 
     .ekseerFormInnerLabelAr-sm>label {

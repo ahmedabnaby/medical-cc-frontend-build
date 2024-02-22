@@ -1126,10 +1126,12 @@ input:-webkit-autofill:active {
     height: auto;
     cursor: pointer;
 }
-#floatingPassword{
+
+#floatingPassword {
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
 }
+
 .password-input-container {
     position: relative;
 }
@@ -1207,10 +1209,8 @@ input:-webkit-autofill:active {
     }
 }
 
-@media (min-width:769px) and (max-width:1399px) {
-    .pmobile {
-        padding-bottom: 22px;
-    }
+.pmobile {
+    padding-bottom: 22px;
 }
 
 @media only screen and (max-width:768px) {
